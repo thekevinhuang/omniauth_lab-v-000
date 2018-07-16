@@ -1,7 +1,7 @@
 <% if session[:user_id]%>
   <h1><%=@user.name%></h1>
   <h2>Email: </h2>
-  <h2>Facebook UID: </h2>
+  <h2>Facebook UID: <%=@user.uid%></h2>
   <img src="<%=@user.image%>">
 
 <a href='/auth/facebook'>Login with Facebook</a>
